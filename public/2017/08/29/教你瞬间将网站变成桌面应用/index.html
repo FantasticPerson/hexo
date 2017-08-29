@@ -13,13 +13,9 @@
     
     
     
-        <meta name="description" content="git地址：react-starter
-运行步骤：
-安装node
-
-进入项目根目录，运行npm install有可能这条命令运行会很慢，我建议先安装 cnpmnpm install cnpm -g然后再运行cnpm install
-
-运行npm run dev通过浏览器打开  http://loca">
+        <meta name="description" content="git地址packageMaker
+动机现在es6，es7等等都已经出来了，再使用陈旧的技术显然已经不合适了，但是浏览器的兼容性问题目前还没有办法完全避免，于是electron就派上用场了
+运行步骤:1.克隆项目12git clonegit@git@github.com:FantasticPerso">
     
 
     <!--Author-->
@@ -29,7 +25,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="5分钟上手react"/>
+        <meta property="og:title" content="教你瞬间将网站变成桌面应用"/>
     
 
     <!--Open Graph Description-->
@@ -51,7 +47,7 @@
 
     <!-- Title -->
     
-    <title>5分钟上手react - 吴聃聃的个人博客</title>
+    <title>教你瞬间将网站变成桌面应用 - 吴聃聃的个人博客</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -142,12 +138,12 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>5分钟上手react</h1>
+                    <h1>教你瞬间将网站变成桌面应用</h1>
                     
                     <span class="meta">
                         <!-- Date and Author -->
                         
-                        2016-10-23
+                        2017-08-29
                     </span>
                 </div>
             </div>
@@ -162,43 +158,21 @@
 
             <!-- Tags and categories -->
            
-                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
-                    
-                        
-
-
-<a href="/tags/web/">#web</a>
-
-
-                    
-                </div>
-                <div class="col-lg-4 col-md-5 post-categories">
-                    
-                </div>
-            
 
             <!-- Gallery -->
             
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>git地址：<a href="https://github.com/wdd119/react-starter" target="_blank" rel="external">react-starter</a></p>
-<h2 id="运行步骤："><a href="#运行步骤：" class="headerlink" title="运行步骤："></a>运行步骤：</h2><ol>
-<li><p>安装node</p>
-</li>
-<li><p>进入项目根目录，运行<br><code>npm install</code><br>有可能这条命令运行会很慢，我建议先安装 cnpm<br><code>npm install cnpm -g</code><br>然后再运行<br><code>cnpm install</code></p>
-</li>
-<li><p>运行<br><code>npm run dev</code><br>通过浏览器打开  <a href="http://localhost:3999/#/demoPage" target="_blank" rel="external">http://localhost:3999/#/demoPage</a><br>下面就是运行效果：<br><img src="http://odpdls7ab.bkt.clouddn.com/blog/blog1/blog1.PNG" alt="此处输入图片的描述"></p>
-</li>
-</ol>
-<p>好了，上面就是怎么把项目跑起来的全过程！！！</p>
-<h2 id="内容分析："><a href="#内容分析：" class="headerlink" title="内容分析："></a>内容分析：</h2><p><img src="http://odpdls7ab.bkt.clouddn.com/blog/blog1/blog2.PNG" alt="此处输入图片的描述"><br>源代码主要放在web这个目录底下</p>
-<p><strong><em>下面主要介绍一下 router 和 redux</em></strong></p>
-<h2 id="router"><a href="#router" class="headerlink" title="router"></a>router</h2><p>主要看routes这个目录<br><img src="http://odpdls7ab.bkt.clouddn.com/blog/blog1/blog4.PNG" alt="此处输入图片的描述"><br>index.js<br><img src="http://odpdls7ab.bkt.clouddn.com/blog/blog1/blog3.PNG" alt="此处输入图片的描述"><br><code>path:&#39;/&#39;</code>对用渲染的组件为 indexApp ,对应的URL为<a href="http://localhost:3999/#/" target="_blank" rel="external">http://localhost:3999/#/</a><br><code>onEnter</code>：进入这个路由之前需要干什么写在这里面，最后调一下<code>cb()</code>真正进入这个路由<br><code>onLeave</code>：自然表示的就是离开这个路由之后做的事情<br><code>childRoutes</code>：表示当前这个路由底下的子路由<br>我们看一下demoPage里面怎么定义的：<br><img src="http://odpdls7ab.bkt.clouddn.com/blog/blog1/blog5.PNG" alt="此处输入图片的描述"><br>根据里面的定义 <a href="http://localhost:3999/#/demoPage" target="_blank" rel="external">http://localhost:3999/#/demoPage</a> 就是子路由对应的URL</p>
-<h2 id="redux"><a href="#redux" class="headerlink" title="redux"></a>redux</h2><p>简单的说redux就是用来管理数据流的一个工具<br>首先我们来看两张图<br><img src="http://odpdls7ab.bkt.clouddn.com/blog/blog1/blog6.jpg" alt="此处输入图片的描述"><br><img src="http://odpdls7ab.bkt.clouddn.com/blog/blog2/blog7.jpg" alt="此处输入图片的描述"><br>store是一个单一对象<br><img src="http://odpdls7ab.bkt.clouddn.com/blog/blog1/blog9.PNG" alt="此处输入图片的描述"><br><img src="http://odpdls7ab.bkt.clouddn.com/blog/blog1/blog10.PNG" alt="此处输入图片的描述"></p>
-<p>actions可以理解为向store传递数据信息<br><img src="http://odpdls7ab.bkt.clouddn.com/blog/blog1/blog13.PNG" alt="此处输入图片的描述"><br><img src="http://odpdls7ab.bkt.clouddn.com/blog/blog1/blog14.PNG" alt="此处输入图片的描述"><br>reducer实际上就是一个函数，根据action来更新state<br><img src="http://odpdls7ab.bkt.clouddn.com/blog/blog1/blog11.PNG" alt="此处输入图片的描述"><br><img src="http://odpdls7ab.bkt.clouddn.com/blog/blog1/blog12.PNG" alt="此处输入图片的描述"><br>通过console里面的log也可以看到<br><img src="http://odpdls7ab.bkt.clouddn.com/blog/blog1/blog15.PNG" alt="此处输入图片的描述"></p>
-<p>下面看一个具体的例子：<br><img src="http://odpdls7ab.bkt.clouddn.com/blog/blog1/blog19.PNG" alt="此处输入图片的描述"><br>通过上面这段将数据绑定到当前的组件上面<br><img src="http://odpdls7ab.bkt.clouddn.com/bog/blog1/blog17.PNG" alt="此处输入图片的描述"><br>上面的log显示title是’origin title’<br>所以当前界面显示为<br><img src="http://odpdls7ab.bkt.clouddn.com/blog/blog1/blog16.PNG" alt="此处输入图片的描述"><br>通过点击按钮  click to change title<br>出发dispatch操作<br><img src="http://odpdls7ab.bkt.clouddn.com/blog/blog1/blog20.PNG" alt="此处输入图片的描述"><br>此时更新的数据问 ‘new title’ + 当前时间戳<br>如底下log所示<br><img src="http://odpdls7ab.bkt.clouddn.com/blog/blog1/blog22.PNG" alt="此处输入图片的描述"><br>最后界面更新为如下所示：<br><img src="http://odpdls7ab.bkt.clouddn.com/blog/blog1/blog21.PNG" alt="此处输入图片的描述"></p>
-<p>好的 差不多就这样了吧。。。</p>
+                <p>git地址<a href="https://github.com/FantasticPerson/packageMaker2" target="_blank" rel="external">packageMaker</a></p>
+<h2 id="动机"><a href="#动机" class="headerlink" title="动机"></a>动机</h2><p>现在es6，es7等等都已经出来了，再使用陈旧的技术显然已经不合适了，但是浏览器的兼容性问题目前还没有办法完全避免，于是electron就派上用场了</p>
+<h2 id="运行步骤"><a href="#运行步骤" class="headerlink" title="运行步骤:"></a>运行步骤:</h2><p>1.克隆项目<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git clone</div><div class="line">git@git@github.com:FantasticPerson/packageMaker2.git</div></pre></td></tr></table></figure></p>
+<p>2.进入项目<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">进去就是了</div></pre></td></tr></table></figure></p>
+<p>3.运行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm run start</div></pre></td></tr></table></figure></p>
+<h2 id="简要分析"><a href="#简要分析" class="headerlink" title="简要分析:"></a>简要分析:</h2><p>我目前做的是一个打包工具，使用于windows各个版本<br><img src="http://odpdls7ab.bkt.clouddn.com/blog/blog3/pic1.png" alt="此处输入图片的描述"><br><img src="http://odpdls7ab.bkt.clouddn.com/blog/blog3/pic2.png" alt="此处输入图片的描述"></p>
+<h2 id="说明"><a href="#说明" class="headerlink" title="说明:"></a>说明:</h2><p>1、系统平台选择软件运行的系统，win7或者xp<br>2、插件类型，有两种NPAPI，PPAPI，选择你需要使用的插件类型</p>
+<p>生成出来的软件可以使用的快捷键<br>1、f5刷新<br>2、ctrl+r强制刷新</p>
+<h2 id="源码分析"><a href="#源码分析" class="headerlink" title="源码分析:"></a>源码分析:</h2><p>我懒，你自己去看</p>
 
 
                 
